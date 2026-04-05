@@ -1,0 +1,68 @@
+<svg width="345" height="240" viewBox="0 0 345 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="12" x2="313" y2="222" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="1" stop-color="#142843"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(186 104) rotate(90) scale(98 124)">
+      <stop stop-color="#0FE7FF" stop-opacity="0.42"/>
+      <stop offset="0.5" stop-color="#0FE7FF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#0FE7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(186 104) rotate(90) scale(54)">
+      <stop stop-color="#F4FEFF"/>
+      <stop offset="0.42" stop-color="#6FF6FF"/>
+      <stop offset="1" stop-color="#07BED6"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="129" y1="61" x2="243" y2="147" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#87FBFF"/>
+      <stop offset="1" stop-color="#15C7DE"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="21" y1="18" x2="324" y2="221" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="softGlow" x="72" y="-10" width="228" height="228" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <filter id="walletGlow" x="253" y="144" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="345" height="240" rx="26" fill="url(#bg)"/>
+  <rect x="10.5" y="10.5" width="324" height="219" rx="18.5" stroke="url(#frame)"/>
+  <path d="M24 190C58 167 80 165 112 179C142 192 168 208 208 196C250 183 270 145 321 154" stroke="#D2F9FF" stroke-opacity="0.08" stroke-width="1.3"/>
+  <path d="M30 62C70 29 121 21 169 39C201 51 223 74 252 80C282 86 300 82 325 64" stroke="#D2F9FF" stroke-opacity="0.08" stroke-width="1.1"/>
+  <circle cx="186" cy="104" r="90" fill="url(#halo)"/>
+  <circle cx="186" cy="104" r="58" fill="#1EE8FF" fill-opacity="0.15" filter="url(#softGlow)"/>
+
+  <circle cx="186" cy="104" r="77" stroke="#9FF7FF" stroke-opacity="0.08" stroke-width="1.4"/>
+  <circle cx="186" cy="104" r="60" stroke="#9FF7FF" stroke-opacity="0.16" stroke-width="1.2"/>
+  <circle cx="186" cy="104" r="43" stroke="url(#ring)" stroke-opacity="0.8" stroke-width="1.8"/>
+  <circle cx="186" cy="104" r="31" fill="url(#core)"/>
+  <circle cx="186" cy="104" r="13" fill="#F8FFFF" fill-opacity="0.95"/>
+  <path d="M150 104H222" stroke="#D8FDFF" stroke-opacity="0.5" stroke-width="1.2"/>
+  <path d="M186 68V140" stroke="#D8FDFF" stroke-opacity="0.22" stroke-width="1"/>
+  <path d="M160 78C170 87 173 101 169 114C165 126 154 135 141 138" stroke="#D8FDFF" stroke-opacity="0.24" stroke-width="1"/>
+  <path d="M211 78C201 87 198 101 202 114C206 126 217 135 230 138" stroke="#D8FDFF" stroke-opacity="0.24" stroke-width="1"/>
+
+  <rect x="24" y="22" width="82" height="26" rx="13" fill="#F4FBFF" fill-opacity="0.08" stroke="#F4FBFF" stroke-opacity="0.12"/>
+  <text x="37" y="39" fill="#F1FCFF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.22em">MINI APP</text>
+
+  <text x="24" y="174" fill="#F7FCFF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.04em">Verified</text>
+  <text x="24" y="202" fill="#8AA5BF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="0.02em">Auth   Verify   Pay</text>
+
+  <circle cx="281" cy="174" r="20" fill="#3FF4FF" fill-opacity="0.2" filter="url(#walletGlow)"/>
+  <g transform="translate(261 154)">
+    <rect x="0.75" y="5.75" width="31.5" height="22.5" rx="7.25" stroke="#E9FDFF" stroke-opacity="0.94" stroke-width="1.5"/>
+    <path d="M7 10.5V8.8C7 6.98 8.47 5.5 10.3 5.5H26" stroke="#E9FDFF" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M21.5 16.5H26.5" stroke="#E9FDFF" stroke-opacity="0.9" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="34" cy="6" r="6" fill="#34D399"/>
+    <path d="M31.2 6L33.2 8L37 4.3" stroke="#08111F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <circle cx="58" cy="196" r="2.5" fill="#7CF9FF" fill-opacity="0.7"/>
+  <circle cx="76" cy="196" r="2.5" fill="#7CF9FF" fill-opacity="0.35"/>
+  <circle cx="94" cy="196" r="2.5" fill="#7CF9FF" fill-opacity="0.2"/>
+</svg>
