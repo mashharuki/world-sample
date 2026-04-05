@@ -1,6 +1,12 @@
 import "dotenv/config";
 import { defineConfig } from "hardhat/config";
 import hardhatToolboxViem from "@nomicfoundation/hardhat-toolbox-viem";
+import {
+  getCountTask,
+  incrementTask,
+  incrementByTask,
+  resetTask,
+} from "./tasks/worldCounter.js";
 
 const WORLD_SEPOLIA_RPC_URL =
   process.env.WORLD_SEPOLIA_RPC_URL ?? "https://worldchain-sepolia.drpc.org";
@@ -8,6 +14,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY ?? "";
 
 export default defineConfig({
   plugins: [hardhatToolboxViem],
+  tasks: [getCountTask, incrementTask, incrementByTask, resetTask],
 
   solidity: {
     version: "0.8.28",
