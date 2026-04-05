@@ -1,0 +1,31 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npx hardhat build",
+    "test": "npx hardhat test",
+    "test:solidity": "npx hardhat test solidity",
+    "test:nodejs": "npx hardhat test nodejs",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat ignition deploy ignition/modules/WorldModule.ts",
+    "deploy:world-sepolia": "npx hardhat ignition deploy ignition/modules/WorldModule.ts --network worldSepolia",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.3",
+    "@types/node": "^25.5.2",
+    "dotenv": "^17.4.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.7",
+    "hardhat": "^3.3.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-solidity": "^2.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
